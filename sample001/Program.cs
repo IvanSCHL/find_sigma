@@ -1,8 +1,14 @@
 ﻿
 //double m = Convert.ToDouble();
 
-int mass=1000;
-int[] RS =new int [mass];
+
+
+int mass=3;
+double[] RS = new double[] { 0, 0, 0 };
+//int[] RS =new int [mass];
+RS[0]=261.21;
+RS[1]=260.88;
+RS[2]=261.27;
 double mean=0;
 double sum=0;
 double stddev=0;
@@ -12,8 +18,8 @@ int i=0;
 
 for(i=0; i<mass;i++)
     {
-    Random rnd = new Random();
-        RS [i] = rnd.Next(100);
+    //Random rnd = new Random();
+     //   RS [i] = rnd.Next(100);
         //RS [i] = rnd.Next(49,51);
     sum=sum+RS[i];
     }
